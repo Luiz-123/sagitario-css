@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mansory</title>
+
+    <style>
+        body {
+            background-color: #444;
+            margin: 1em;
+        }        
+        
+        .gallery {
+            columns: 5 320px;
+            column-gap: 0.5em;   
+            padding: 40px;         
+        }
+
+        img {
+            max-width: 100%;
+            /*margin-bottom: 0.5em;*/
+            display: block;
+            filter: grayscale(0.9) brightness(0.8);            
+            transition: 0.3s linear;            
+        }
+
+        .filtro {     
+            margin-bottom: 0.5em;  
+            border-radius: 3px;     
+            overflow: hidden;
+            transition: 0.3s;
+            cursor: pointer;
+            outline: 2px solid rgba(255, 255, 255, 0.6);
+            outline-offset: -1px;
+            box-shadow: 0 20px 50px rgba(0,0,0,.8);
+            opacity: 1;   
+            background: rgba(211, 231, 99, 0.4);                    
+        }
+                        
+        .filtro:hover img {
+            filter: grayscale(0) brightness(1);
+            transform: scale(1.1);
+            opacity: 0.8;             
+        }
+
+        @media screen and (max-width: 680px) {
+        .gallery {
+            columns: 2 140px;
+            max-width: 100%;
+            padding: 0px;
+            }
+            
+        .gallery img {
+            /*filter: grayscale(0) brightness(1);*/
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="gallery">
+        <div class="filtro"><img src="https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" /></div>
+        <div class="filtro"><img src="https://images.pexels.com/photos/2419375/pexels-photo-2419375.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /></div>
+        <div class="filtro"><img src="https://images.pexels.com/photos/2326290/pexels-photo-2326290.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /></div>
+        <div class="filtro"><img src="https://images.pexels.com/photos/3251006/pexels-photo-3251006.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /></div>
+        <div class="filtro"><img src="https://images.pexels.com/photos/1980720/pexels-photo-1980720.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /></div>
+
+        <div class="filtro"><img src="https://images.pexels.com/photos/3546429/pexels-photo-3546429.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></div>
+        <div class="filtro"><img src="https://images.pexels.com/photos/3889868/pexels-photo-3889868.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></div>
+        <div class="filtro"><img src="https://images.pexels.com/photos/2091160/pexels-photo-2091160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></div>
+        <div class="filtro"><img src="https://images.pexels.com/photos/2019546/pexels-photo-2019546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></div>
+
+        <div class="filtro"><img src="https://images.pexels.com/photos/3889868/pexels-photo-3889868.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /></div>
+        <div class="filtro"><img src="https://images.pexels.com/photos/2360569/pexels-photo-2360569.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /></div>
+        <div class="filtro"><img src="https://images.pexels.com/photos/3779785/pexels-photo-3779785.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></div>
+        <div class="filtro"><img src="https://images.pexels.com/photos/259987/pexels-photo-259987.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></div>
+        <div class="filtro"><img src="https://images.pexels.com/photos/2350514/pexels-photo-2350514.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></div>
+        
+        <div class="filtro"><img src="https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" /></div>
+        <div class="filtro"><img src="https://images.pexels.com/photos/2419375/pexels-photo-2419375.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /></div>
+        <div class="filtro"><img src="https://images.pexels.com/photos/2326290/pexels-photo-2326290.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /></div>
+        <div class="filtro"><img src="https://images.pexels.com/photos/3251006/pexels-photo-3251006.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /></div>
+        <div class="filtro"><img src="https://images.pexels.com/photos/1980720/pexels-photo-1980720.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /></div>
+
+        <div class="filtro"><img src="https://images.pexels.com/photos/3889868/pexels-photo-3889868.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /></div>
+        <div class="filtro"><img src="https://images.pexels.com/photos/2360569/pexels-photo-2360569.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /></div>
+        <div class="filtro"><img src="https://images.pexels.com/photos/3779785/pexels-photo-3779785.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></div>
+        <div class="filtro"><img src="https://images.pexels.com/photos/259987/pexels-photo-259987.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></div>
+        <div class="filtro"><img src="https://images.pexels.com/photos/2350514/pexels-photo-2350514.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></div>
+    </div>
+</body>
+</html>

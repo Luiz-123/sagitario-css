@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mansory</title>
+    <link rel="stylesheet" href="lightbox.css">
+
+    <style>
+        body {
+            background-color: #444;
+            margin: 1em;
+        }        
+        
+        .gallery {
+            columns: 5 320px;
+            column-gap: 0.5em;   
+            padding: 40px;         
+        }
+
+        img {
+            max-width: 100%;
+            /*margin-bottom: 0.5em;*/
+            display: block;
+            filter: grayscale(0.9) brightness(0.8);            
+            transition: 0.3s linear;            
+        }
+
+        .card {     
+            margin-bottom: 0.5em;  
+            border-radius: 3px;     
+            overflow: hidden;
+            transition: 0.3s;
+            cursor: pointer;
+            outline: 2px solid rgba(255, 255, 255, 0.6);
+            outline-offset: -1px;
+            box-shadow: 0 20px 50px rgba(0,0,0,.8);
+            /*opacity: 1;   
+            background: rgba(211, 231, 99, 0.4);*/ 
+            position: relative;                   
+        }
+                        
+        .card:hover img {
+            filter: grayscale(0) brightness(1);
+            transform: scale(1.1);
+            /*opacity: 0.8;*/             
+        }
+
+        
+
+        .card .overlay {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+            color: #000;
+            background: rgba(255,255,255,0.5);  
+            border: 1px solid #ffffff90;
+            opacity: 0;
+            transition: 0.3s;
+            border-radius: 3px;            
+        }
+
+        .card:hover .overlay {
+            opacity: 1;
+        }
+
+        
+
+        @media screen and (max-width: 680px) {
+        .gallery {
+            columns: 2 140px;
+            max-width: 100%;
+            padding: 0px;
+            }
+
+        .card:hover .overlay {
+            opacity: 0;
+        }
+            
+        /*
+        .gallery img {
+            filter: grayscale(0) brightness(1);
+            }
+        */
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    
+    </div>
+    <div class="gallery">
+
+        <a href="https://images.unsplash.com/photo-1436891620584-47fd0e565afb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1436891620584-47fd0e565afb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" />
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>
+        </a>    
+        
+        <a href="https://images.pexels.com/photos/2419375/pexels-photo-2419375.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/2419375/pexels-photo-2419375.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />                          
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>    
+        </a>    
+
+        <a href="https://images.pexels.com/photos/2326290/pexels-photo-2326290.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/2326290/pexels-photo-2326290.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>
+        </a>
+
+        <a href="https://images.pexels.com/photos/3251006/pexels-photo-3251006.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/3251006/pexels-photo-3251006.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>            
+        </a>
+
+        <a href="https://images.pexels.com/photos/1980720/pexels-photo-1980720.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/1980720/pexels-photo-1980720.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>              
+        </a>
+
+        <a href="https://images.pexels.com/photos/3546429/pexels-photo-3546429.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/3546429/pexels-photo-3546429.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>              
+        </a>
+
+        <a href="https://images.pexels.com/photos/3889868/pexels-photo-3889868.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/3889868/pexels-photo-3889868.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>              
+        </a>
+
+        <a href="https://images.pexels.com/photos/2091160/pexels-photo-2091160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/2091160/pexels-photo-2091160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>              
+        </a>
+
+        <a href="https://images.unsplash.com/photo-1515825838458-f2a94b20105a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1515825838458-f2a94b20105a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80">
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>              
+        </a>
+
+        <a href="https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>              
+        </a>
+
+        <a href="https://images.unsplash.com/photo-1450849608880-6f787542c88a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1421&q=80" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1450849608880-6f787542c88a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1421&q=80" />
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>              
+        </a>
+
+        <a href="https://images.pexels.com/photos/3779785/pexels-photo-3779785.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/3779785/pexels-photo-3779785.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>              
+        </a>
+
+        <a href="https://images.pexels.com/photos/259987/pexels-photo-259987.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/259987/pexels-photo-259987.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>              
+        </a>
+
+        <a href="https://images.pexels.com/photos/2350514/pexels-photo-2350514.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/2350514/pexels-photo-2350514.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>              
+        </a>
+
+        <a href="https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>              
+        </a>
+
+        <a href="https://images.pexels.com/photos/2419375/pexels-photo-2419375.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/2419375/pexels-photo-2419375.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>              
+        </a>
+
+        <a href="https://images.pexels.com/photos/2326290/pexels-photo-2326290.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/2326290/pexels-photo-2326290.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>              
+        </a>
+
+        <a href="https://images.pexels.com/photos/3251006/pexels-photo-3251006.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/3251006/pexels-photo-3251006.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>              
+        </a>
+
+        <a href="https://images.pexels.com/photos/1980720/pexels-photo-1980720.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/1980720/pexels-photo-1980720.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>              
+        </a>
+
+        <a href="https://images.pexels.com/photos/3889868/pexels-photo-3889868.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/3889868/pexels-photo-3889868.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />    
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>            
+        </a>
+
+        <a href="https://images.pexels.com/photos/2360569/pexels-photo-2360569.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/2360569/pexels-photo-2360569.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>              
+        </a>
+
+        <a href="https://images.pexels.com/photos/3779785/pexels-photo-3779785.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/3779785/pexels-photo-3779785.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"> 
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>              
+        </a>
+
+        <a href="https://images.pexels.com/photos/259987/pexels-photo-259987.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/259987/pexels-photo-259987.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>             
+        </a>
+
+        <a href="https://images.pexels.com/photos/2350514/pexels-photo-2350514.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-lightbox="models" data-title="City">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/2350514/pexels-photo-2350514.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    <div class="overlay">
+                        <h1>New York</h1>                    
+                    </div>
+            </div>              
+        </a>
+                                                                                                                                             
+        
+    </div>
+
+
+    <script src="lightbox-plus-jquery.js"></script>
+</body>
+</html>

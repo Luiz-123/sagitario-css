@@ -1,0 +1,56 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */ 
+  .column {
+    flex: 25%;
+    max-width: 33.3%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    /*margin-top: 8px;*/
+    vertical-align: middle;
+    width: 100%;
+    filter: grayscale(1) brightness(0.5);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+  .column img:hover {
+    filter: grayscale(0);    
+  }
+
+  .filtro {
+    margin-top: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  
+  .filtro:hover img {
+    transform: scale(1.1);    
+  }
+
+  /*
+  @media screen and (max-width: 500px) {
+    .column {
+      flex: 33%;
+      max-width: 100%;
+    }
+  }
+  */
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 480px) {
+    .column {
+      flex: 34%;
+      max-width: 100%;
+    }
+    .column img {
+      filter: grayscale(0) brightness(1);
+    }
+  }
+  
